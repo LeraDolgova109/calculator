@@ -45,6 +45,11 @@ function calculate() {
     updateDisplay();
 }
 
+function changeSign() {
+    currentOperand = (parseFloat(currentOperand) * -1).toString();
+    updateDisplay();
+}
+
 function updateDisplay() {
     document.getElementById('display').value = currentOperand;
 }
