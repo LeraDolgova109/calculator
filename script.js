@@ -46,6 +46,7 @@ function calculate() {
 }
 
 function changeSign() {
+    if (currentOperand === '') return;
     currentOperand = (parseFloat(currentOperand) * -1).toString();
     updateDisplay();
 }
