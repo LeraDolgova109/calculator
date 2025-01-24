@@ -48,3 +48,10 @@ function calculate() {
 function updateDisplay() {
     document.getElementById('display').value = currentOperand;
 }
+
+function clearDisplay() {
+    currentOperand = '';
+    previousOperand = '';
+    operation = undefined;
+    updateDisplay();
+}
